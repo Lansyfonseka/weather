@@ -1,0 +1,77 @@
+main .container {
+    
+}
+.information {
+    width: 50%;
+    text-align: center;
+    background: #00000030;
+    border-radius: 10px;
+    font-family: "PrometoW02-Regular";
+    .information--location {
+        margin: 10px 0;
+        h3 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+    .information--date {
+        font-size: 25px;
+    }
+    .information--short {
+        font-size: 15px;
+    }
+    .information--current {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .information--current-temperature {
+            margin: 0 10px;
+            font-size: 70px;
+        }
+        img {
+            height: 100px;
+        }
+    }
+    .information--daily {
+        display: flex;
+        margin: 20px 0;
+        div {
+            width: 33%;
+            span {
+                font-weight: bold;
+            }
+            .information--daily-day {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.map {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-end;  
+    width: 40%;
+    iframe {
+        width: 100%;
+        height: 90%;
+        border: 0;
+        border-radius: 10px;
+    }
+    p {
+        padding: 0 10px;
+        width: fit-content;
+        background: #00000030;
+        border-radius: 5px;
+        text-align: end;
+        font-family: "PrometoW02-Regular";
+    }
+    p:first-child {
+        border-bottom-right-radius: 0;
+    }
+    p:last-child {
+        border-top-right-radius: 0;
+    }
+}

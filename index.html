@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="dist/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="switches">
+                <button class="refresh"><img src="/source/images/return.svg" alt=""></button>
+                <select name="language" class="language">
+                    <option value="eng" selected="selected">ENG</option>
+                    <option value="rus">RUS</option>
+                    <option value="blr">BLR</option>
+                </select>
+                <div class="degree">
+                    <button class="celsius">&#8451;</button>
+                    <button class="fahrenheit">&#8457;</button>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button class="microphone"><img src="/source/images/microphone.svg" alt="microphone"></button>
+                <button class="search--button">Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="information">
+                <div class="information--location">
+                    <h3>Street</h3>
+                    <p>Country</p>
+                </div>
+                <div class="information--date">Set 25 September 15:25:47</div>
+                <div class="information--short">cloudy</div>
+                <div class="information--current">
+                    <span class="information--current-temperature">-2°</span>
+                    <span class="information--current-icon"><img src="/source/images/animated/cloudy.svg" alt="cloud"></span>
+                </div>
+                <div class="information--detail">
+                    <span>Feel</span>
+                    <span>Wind</span>
+                    <span>Humidity</span>
+                </div>
+                <div class="information--daily">
+                    <div>
+                        <p>Sunday</p>
+                        <img src="/source/images/animated/weather.svg" alt="weather">
+                        <span class="information--daily-day">-1°</span>
+                        <span class="information--daily-night">-4°</span>
+                    </div>
+                    <div><p>Sunday</p>
+                        <img src="/source/images/animated/weather.svg" alt="weather">
+                        <span class="information--daily-day">-1°</span>
+                        <span class="information--daily-night">-4°</span>
+                    </div>
+                    <div><p>Sunday</p>
+                        <img src="/source/images/animated/weather.svg" alt="weather">
+                        <span class="information--daily-day">-1°</span>
+                        <span class="information--daily-night">-4°</span>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://yandex.by/map-widget/v1/-/CCsnb1S" frameborder="1" allowfullscreen="true"></iframe>
+                <p>Latitude: 59°57'12"</p>
+                <p>Longitude: 59°57'12"</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="dist/bundle.js"></script>
+</body>
+</html>
