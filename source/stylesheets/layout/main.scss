@@ -1,14 +1,11 @@
-main .container {
-    
-}
 .information {
     width: 50%;
     height: fit-content;
     text-align: center;
-    backdrop-filter: blur(2px) contrast(0.8);    
+    backdrop-filter: blur(2px) contrast(0.8);
     background: #ffffff30;
     border-radius: 10px;
-    font-family: "PrometoW02-Regular";
+    font-family: 'Balsamiq Sans', cursive, "PrometoW02-Regular";
     .information--location {
         margin: 10px 0;
         h3 {
@@ -51,39 +48,9 @@ main .container {
             .information--daily-day {
                 font-size: 25px;
             }
+            .information--daily-icon {
+                width: 150px;
+            }
         }
     }
-}
-
-.map {
-    display: flex;
-    flex-direction: column;  
-    align-items: flex-end;  
-    width: 40%;
-    #map {
-        width: 100%;
-        height: 350px;
-        border: 0;
-        border-radius: 10px;
-    }    
-    p {
-        padding: 0 10px;
-        width: fit-content;
-        backdrop-filter: blur(2px) contrast(0.8);
-        background: #00000030;
-        border-radius: 5px;
-        font-size: 1.2rem;
-        text-align: end;
-        font-family: "PrometoW02-Regular";
-    }
-    p:first-child {
-        border-bottom-right-radius: 0;
-    }
-    p:last-child {
-        border-top-right-radius: 0;
-    }
-}
-
-.ymaps-2-1-75-map ymaps{
-    border-radius: 10px;
 }

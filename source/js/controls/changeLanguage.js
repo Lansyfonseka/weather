@@ -4,9 +4,9 @@ import renderWeather from "../view/renderWeather.js";
 import renderLocation from "../view/renderLocation.js";
 import getNameCity from "../api/getNameCity.js";
 
-export default async function changeLanguage(){
+export default async function changeLanguage() {
     const language = mainData.controls.language.value;
-    switch(language){
+    switch (language) {
         case "eng":
             mainData.language = "en";
             localStorage.language = mainData.language;

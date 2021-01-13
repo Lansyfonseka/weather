@@ -15,7 +15,7 @@ import renderWeather from "./view/renderWeather.js";
 import renderLocation from "./view/renderLocation.js";
 import renderHTML from "./view/renderHTML.js";
 
-async function initFancyWeather(){
+async function initFancyWeather() {
     if (!localStorage.language)
         localStorage.language = "en";
     if (!localStorage.temperature)
@@ -26,15 +26,15 @@ async function initFancyWeather(){
 
     renderHTML(HTMLData);
     refreshBackground();
-    
+
     initMainData();
     initControls();
-    
+
     if (!mainData.location)
-        mainData.location = await getLocationUser();    
-    
+        mainData.location = await getLocationUser();
+
     ymaps.ready(initMap);
-    
+
     mainData.location = await getNameCity();
     mainData.weather = await processingWeather();
     renderLocation(mainData.location.location);

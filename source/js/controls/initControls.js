@@ -8,11 +8,11 @@ import initMicrophone from "./initMicrophone.js";
 import mainData from "../mainData.js";
 import mapData from "../mapData.js";
 
-export default function initControls(){    
+export default function initControls() {
     mainData.controls.buttonSearch.textContent = `${mapData[mainData.language].other[0]}`;
     mainData.controls.searchInput.placeholder = `${mapData[mainData.language].other[1]}`;
 
-    switch(mainData.language){
+    switch (mainData.language) {
         case "en":
             mainData.controls.language.selectedIndex = 0;
             break;

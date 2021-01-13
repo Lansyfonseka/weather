@@ -8,8 +8,8 @@ const HTMLData = `<header>
             <option value="blr">BLR</option>
         </select>
         <div class="degree">
-            <button class="celsius">&#8451;</button>
-            <button class="fahrenheit">&#8457;</button>
+            <button class="celsius">&#176;C</button>
+            <button class="fahrenheit">&#176;F</button>
         </div>
     </div>
     <div class="search">

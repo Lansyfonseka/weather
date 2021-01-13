@@ -1,6 +1,6 @@
 import mainData from "../mainData.js";
 
-export default function initMainData(){
+export default function initMainData() {
     mainData.controls = {};
     mainData.controls.buttonSearch = document.querySelector(".search--button");
     mainData.controls.buttonRefresh = document.querySelector(".refresh");
