@@ -1,4 +1,4 @@
-export default async function getLocationUser(){
+export default async function getLocationUser() {
     const API_TOKEN = "3fab45faab3551";
     const URL = `https://ipinfo.io/json?token=${API_TOKEN}`;
 

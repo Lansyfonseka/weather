@@ -1,9 +1,25 @@
-body, header, main, footer, div, ul, li, p, a, h1, h2, h3, button {
-  margin: 0;
-  padding: 0;
-  border: 0;
+body,
+header,
+main,
+footer,
+div,
+ul,
+li,
+p,
+a,
+h1,
+h2,
+h3,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    cursor: default;
 }
 
 body {
-  background-repeat: no-repeat;
+    height: 100vh;
+    @media screen and (max-width: 780px) {
+        height: auto;
+    }
 }

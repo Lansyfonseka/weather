@@ -1,13 +1,13 @@
 import mainData from "../mainData.js";
 import getWeather from "../api/getWeather.js";
 
-export default async function processingWeather(){
+export default async function processingWeather() {
     const data = await getWeather();
 
     const currentlyWeather = {
         icon: data.currently.icon,
         temperature: Math.round(data.currently.temperature),
-        humidity: data.currently.humidity*100,
+        humidity: Math.round(data.currently.humidity * 100),
         windSpeed: Math.round(data.currently.windSpeed),
         apparentTemperature: Math.round(data.currently.apparentTemperature)
     };
@@ -29,5 +29,5 @@ export default async function processingWeather(){
             temperatureMin: Math.round(daily[2].temperatureMin)
         }
     }
-    return {currentlyWeather, dailyWeather};
+    return { currentlyWeather, dailyWeather };
 }

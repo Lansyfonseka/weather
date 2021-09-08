@@ -1,4 +1,5 @@
 .map {
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -12,22 +13,30 @@
     p {
         padding: 0 10px;
         width: fit-content;
-        backdrop-filter: blur(2px) contrast(0.8);
-        background: #00000030;
+        backdrop-filter: blur(2px) contrast(0.3);
         border-radius: 5px;
         font-size: 1.2rem;
         text-align: end;
         font-family: 'Balsamiq Sans', cursive, "PrometoW02-Regular";
+        transition: 0.5s;
+        &:hover {
+            background: #ffffff30;
+            border-radius: 5px;
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
     }
-    p:first-child {
+    .latitude {
         border-bottom-right-radius: 0;
     }
-    p:last-child {
+    .longitude {
         border-top-right-radius: 0;
+    }
+    @media screen and (max-width: 780px) {
+        width: 80%;
     }
 }
 
-.ymaps-2-1-75-map ymaps,
-.ymaps-2-1-78-map {
+ymaps {
     border-radius: 10px;
 }
