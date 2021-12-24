@@ -1,12 +1,15 @@
-main .container {
-    
-}
 .information {
+    margin: 20px 0;
     width: 50%;
+    height: fit-content;
     text-align: center;
-    background: #00000030;
+    backdrop-filter: blur(2px) contrast(0.8);
+    background: #ffffff30;
     border-radius: 10px;
-    font-family: "PrometoW02-Regular";
+    font-family: 'Balsamiq Sans', cursive, "PrometoW02-Regular";
+    @media screen and (max-width: 780px) {
+        width: 80%;
+    }
     .information--location {
         margin: 10px 0;
         h3 {
@@ -33,6 +36,17 @@ main .container {
         img {
             height: 100px;
         }
+        transition: 0.5s;
+        &:hover {
+            background: #ffffff30;
+            border-radius: 10px;
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+    }
+    .information--detail {
+        display: flex;
+        justify-content: space-evenly;
     }
     .information--daily {
         display: flex;
@@ -45,33 +59,16 @@ main .container {
             .information--daily-day {
                 font-size: 25px;
             }
+            .information--daily-icon {
+                width: 150px;
+            }
+            transition: 0.5s;
+            &:hover {
+                background: #ffffff30;
+                border-radius: 10px;
+                transform: scale(1.2);
+                transition: 0.5s;
+            }
         }
-    }
-}
-
-.map {
-    display: flex;
-    flex-direction: column;  
-    align-items: flex-end;  
-    width: 40%;
-    iframe {
-        width: 100%;
-        height: 90%;
-        border: 0;
-        border-radius: 10px;
-    }
-    p {
-        padding: 0 10px;
-        width: fit-content;
-        background: #00000030;
-        border-radius: 5px;
-        text-align: end;
-        font-family: "PrometoW02-Regular";
-    }
-    p:first-child {
-        border-bottom-right-radius: 0;
-    }
-    p:last-child {
-        border-top-right-radius: 0;
     }
 }
